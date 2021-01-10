@@ -7,7 +7,7 @@ you must do this by modifying the input array in-place with O(1) extra memory.
 
 */
 
-function countUniqueValues(arr) {
+function removeDuplicates(arr) {
   let i = 0;
   let j = 1;
 
