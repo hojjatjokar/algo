@@ -8,6 +8,7 @@
 
 function same(arr1, arr2) {
   const squaredCounter = {};
+
   arr2.forEach((value) => {
     squaredCounter[value] = squaredCounter[value]
       ? squaredCounter[value] + 1
