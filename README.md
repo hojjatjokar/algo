@@ -4,8 +4,9 @@
 
 ### Frequency Counter
 
-- [Anagram](https://github.com/hojjatjokar/Algo/blob/main/src/FrequencyCounterPattern/anagram.js)
 - [Same](https://github.com/hojjatjokar/Algo/blob/main/src/FrequencyCounterPattern/same.js)
+
+- [Anagram](https://github.com/hojjatjokar/Algo/blob/main/src/FrequencyCounterPattern/anagram.js)
 - [TwoSum](https://github.com/hojjatjokar/Algo/blob/main/src/FrequencyCounterPattern/twoSum.js)
 - [Check Duplicates](https://github.com/hojjatjokar/Algo/blob/main/src/FrequencyCounterPattern/areThereDuplicates.js)
 
