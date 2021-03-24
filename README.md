@@ -1,5 +1,5 @@
 # JavaScript Algorithms
-
+[![CircleCI](https://circleci.com/gh/hojjatjokar/Algo/tree/main.svg?style=svg)](https://circleci.com/gh/hojjatjokar/Algo/tree/main)
 ## Patterns
 
 ### Frequency Counter
