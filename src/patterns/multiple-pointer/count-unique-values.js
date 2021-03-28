@@ -1,6 +1,5 @@
 import { validationMessages } from "../../utils/strings";
 
-
 function countUniqueValues(arr) {
   if(!arr) throw new Error(validationMessages.missingArguments)
   if(!Array.isArray(arr)) throw new Error(validationMessages.invalidArguments);
@@ -12,7 +11,6 @@ function countUniqueValues(arr) {
   let count= 1;
 
   while(j < arr.length){
-    console.log(arr[i], arr[j], arr[j] > arr[i])
     if(arr[j] > arr[i]){
       count++
       i = j;
