@@ -1,4 +1,4 @@
-import validAnagram from "./anagram";
+import validAnagram from './anagram';
 
 test('Empty strings are anagram', () => {
   expect(validAnagram('', '')).toBe(true);
