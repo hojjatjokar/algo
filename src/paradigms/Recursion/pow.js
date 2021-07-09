@@ -1,7 +1,7 @@
-function pow(x, y) {
-  if (y === 0) return 1;
+function power(a, b){
+  if(b === 1) return a;
 
-  return x * pow(x, y - 1);
+  return a * power(a, b-1);
 }
 
-console.log(pow(2, 3));
+export default power;
