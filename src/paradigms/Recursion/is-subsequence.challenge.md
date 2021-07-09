@@ -1,4 +1,5 @@
 # isSubsequence
+
 Write a function called isSubsequence which takes in two strings
 and checks whether the characters in the first string form
 a subsequence of the characters in the second string.
@@ -12,18 +13,23 @@ without their order changing.
 - output: boolean
 
 ## Examples
-### Example 1: 
+
+### Example 1:
+
 - inputs
   - str1:'hello'
   - str2: 'hello world'
 - output: true
-### Example 2: 
+
+### Example 2:
+
 - inputs
   - str1: 'sing'
   - str2: 'sting'
 - output: true
 
-### Example 3: 
+### Example 3:
+
 - inputs
   - str1: 'abc'
   - str2: 'acb'
