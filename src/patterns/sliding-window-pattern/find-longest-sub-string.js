@@ -5,19 +5,18 @@ function findLongestSubstring(str) {
   let count = 0;
   let max = 0;
 
-  while(end < str.length){
-    if(!chars.has(str[end])){
+  while (end < str.length) {
+    if (!chars.has(str[end])) {
       chars.set(str[end], end);
       count++;
-      console.log('count', count)
-      if(count > max) max = count;
+      if (count > max) max = count;
     } else {
       start = chars.get(str[end]) + 1;
       count = end - chars.get(str[end]);
     }
     end++;
   }
-  return max
+  return max;
 }
 
 export default findLongestSubstring;

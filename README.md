@@ -1,6 +1,7 @@
 # JavaScript Algorithms
 
 [![CircleCI](https://circleci.com/gh/hojjatjokar/algo/tree/main.svg?style=svg)](https://circleci.com/gh/hojjatjokar/algo/tree/main)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/hojjatjokar/algo/main.svg?style=flat-square)](https://codecov.io/gh/hojjatjokar/algo/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

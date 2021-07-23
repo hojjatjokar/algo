@@ -1,37 +1,25 @@
-/*
-Write a function called minSubArrayLen which accepts two parameters - an array
-of positive integers and a positive integer. This function should return the 
-minimal length of a contiguous subarray of which the sum is greater than or 
-equal to the integer passed to the function. If there isn’t one, return 0 instead.
-*/
-
 function minSubArrayLen(arr, num) {
-  let result = Infinity;
-  let count = 1;
-  let sum = arr[0];
-
   let i = 0;
   let j = 0;
+  let result = 0;
+  let minLen = 0;
+  let current = arr[i];
 
-  while (j < arr.length) {
-    if (sum >= num) {
-      sum -= arr[i];
+  while (j <= arr.length) {
+    if (current >= num) {
+      if (!result || current <= result) {
+        result = current;
+        minLen = j - i + 1 < minLen || !minLen ? j - i + 1 : minLen;
+      }
+
+      current -= arr[i];
       i++;
-      count--;
     } else {
       j++;
-      count++;
-      sum += arr[j];
-    }
-
-    if (sum >= num && count < result) {
-      result = count;
+      if (arr[j]) current += arr[j];
     }
   }
-
-  return result !== Infinity ? result : 0;
+  return minLen;
 }
 
-console.log(minSubArrayLen([2, 3, 1, 2, 4, 3], 7)); // 2 -> because [4, 3] is the smallest subarray
-//console.log(minSubArrayLen([2, 1, 6, 5, 4], 9)); // 2 -> because [5, 4] is the smallest subarray
-//console.log(minSubArrayLen([3, 1, 62, 19], 52)); // 1 -> because [62] is greater than 52
+export default minSubArrayLen;

@@ -1,15 +1,10 @@
-// Write a recursive function called capitalizeFirst. Given an array of strings,
-// capitalize the first letter of each string in the array.
-
 function capitalizeFirst(arr) {
-  if (arr.length === 0) return [];
+  if (!arr.length) return [];
 
-  const current = arr.splice(0, 1)[0];
+  const [word, ...rest] = arr;
+  const capitalized = `${word[0].toUpperCase()}${word.slice(1)}`;
 
-  return [
-    `${current[0].toUpperCase()}${current.slice(1)}`,
-    ...capitalizeFirst(arr),
-  ];
+  return [capitalized].concat(capitalizeFirst(rest));
 }
 
-console.log(capitalizeFirst(['car', 'taco', 'banana'])); // ['Car', 'Taco', 'Banana']
+export default capitalizeFirst;
