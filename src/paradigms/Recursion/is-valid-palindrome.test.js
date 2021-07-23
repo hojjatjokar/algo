@@ -1,4 +1,4 @@
-import isPalindrome from './isPalindrome';
+import isPalindrome from './is-valid-palindrome';
 
 test('Is Palindrome', () => {
   expect(isPalindrome('awesome')).toBe(false);
