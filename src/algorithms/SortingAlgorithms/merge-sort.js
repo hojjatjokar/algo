@@ -1,7 +1,22 @@
+function sort(arr) {
+  if (arr.length < 2) return arr;
+  const [arr1, arr2] = divid(arr);
+
+  return merge(sort(arr1), sort(arr2));
+}
+
+function divid(arr) {
+  const middle = Math.floor(arr.length / 2);
+  const arr1 = arr.slice(0, middle);
+  const arr2 = arr.slice(middle, arr.length);
+
+  return [arr1, arr2];
+}
+
 function merge(arr1, arr2) {
+  const result = [];
   let i = 0;
   let j = 0;
-  let result = [];
 
   while (i < arr1.length && j < arr2.length) {
     if (arr1[i] < arr2[j]) {
@@ -17,7 +32,6 @@ function merge(arr1, arr2) {
     result.push(arr1[i]);
     i++;
   }
-
   while (j < arr2.length) {
     result.push(arr2[j]);
     j++;
@@ -26,15 +40,4 @@ function merge(arr1, arr2) {
   return result;
 }
 
-function sort(arr) {
-  if (arr.length === 1) return arr;
-
-  const middle = Math.floor(arr.length / 2);
-
-  const leftSide = sort(arr.slice(0, middle));
-  const rigthSide = sort(arr.slice(middle));
-
-  return merge(leftSide, rigthSide);
-}
-
-console.log(sort([5, 2, 1, 3, 6]));
+export default sort;
