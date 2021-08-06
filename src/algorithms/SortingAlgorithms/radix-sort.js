@@ -1,12 +1,16 @@
 function radixSort(arr) {
-  const maxLength = 4;
+  let i = 0;
+  let maxLength = 1;
   let result = [...arr];
 
-  for (let i = 0; i < maxLength; i++) {
+  while (i < maxLength) {
     let placeholder = [[], [], [], [], [], [], [], [], [], [], []];
 
     for (const item of result) {
-      const num = getBy(item, i);
+      const itemStr = item.toString();
+      if (itemStr.length > maxLength) maxLength = itemStr;
+
+      const num = getBy(itemStr, i);
       placeholder[num] = [...placeholder[num], item];
     }
 
@@ -18,14 +22,15 @@ function radixSort(arr) {
         }
       }
     }
+
+    i++;
   }
 
   return result;
 }
 
 function getBy(num, nth) {
-  const str = num.toString();
-  return str.length - nth > 0 ? str[str.length - nth - 1] : 0;
+  return num.length - nth > 0 ? num[num.length - nth - 1] : 0;
 }
 
 export default radixSort;
