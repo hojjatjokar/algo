@@ -1,4 +1,4 @@
-import areThereDuplicates from './areThereDuplicates';
+import areThereDuplicates from './are-there-duplicates';
 
 test('Find duplicates', () => {
   expect(areThereDuplicates([1, 2, 3])).toBe(false);
