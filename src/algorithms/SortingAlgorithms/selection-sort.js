@@ -1,15 +1,18 @@
 function selectionSort(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
+    let min = arr[i];
+    let minIndex = i;
+
     for (let j = i + 1; j < arr.length; j++) {
-      console.log(arr[j], arr[i]);
-      if (arr[j] < arr[i]) {
-        console.log('if');
-        const temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+      if (arr[j] < min) {
+        min = arr[j];
+        minIndex = j;
       }
     }
+
+    [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
   }
+
   return arr;
 }
 
