@@ -2,7 +2,7 @@ import { validationMessages } from '../../utils/strings';
 
 function insertionSort(arr) {
   if (!arr) throw new Error(validationMessages.missingArguments);
-  if (Array.isArray(arr)) throw new Error(validationMessages.invalidArguments);
+  if (!Array.isArray(arr)) throw new Error(validationMessages.invalidArguments);
   if (arr.length <= 2) return arr;
 
   for (let i = 1; i < arr.length; i++) {

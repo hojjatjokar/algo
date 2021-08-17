@@ -1,3 +1,4 @@
+import { validationMessages } from '../../utils/strings';
 import insertionSort from './insertion-sort';
 
 test('Insersion sort', () => {
@@ -11,9 +12,14 @@ test('Insersion sort', () => {
 });
 
 test('Insersion sort missing argument', () => {
-  expect();
+  expect(() => insertionSort()).toThrow(validationMessages.missingArguments);
 });
 
-test('Insersion sort invalid argument', () => {});
+test('Insersion sort invalid argument', () => {
+  expect(() => insertionSort(123)).toThrow(validationMessages.invalidArguments);
+});
 
-test('Insersion sort array with less than 2', () => {});
+test('Insersion sort array with less than 2', () => {
+  const arr = [1];
+  expect(insertionSort(arr)).toBe(arr);
+});
