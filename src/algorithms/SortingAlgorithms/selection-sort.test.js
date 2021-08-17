@@ -18,6 +18,6 @@ test('Selection sort should throw error when invalid argument', () => {
 });
 
 test('Selection sort should return same array when length is less than 3', () => {
-  const arr = [1, 2];
+  const arr = [1];
   expect(selectionSort(arr)).toBe(arr);
 });

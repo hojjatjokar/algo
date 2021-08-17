@@ -9,3 +9,11 @@ test('Insersion sort', () => {
     2, 3, 5, 22, 36, 45, 48,
   ]);
 });
+
+test('Insersion sort missing argument', () => {
+  expect();
+});
+
+test('Insersion sort invalid argument', () => {});
+
+test('Insersion sort array with less than 2', () => {});

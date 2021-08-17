@@ -21,7 +21,7 @@ test('Bubble sort need an array as argument', () => {
   expect(() => bubbleSort(123)).toThrow(validationMessages.invalidArguments);
 });
 
-test('Bubble sort should return arr with less that 3 argument as it is', () => {
-  const arr = [2, 3];
+test('Bubble sort should return arr with less than 2 argument as it is', () => {
+  const arr = [2];
   expect(bubbleSort(arr)).toBe(arr);
 });

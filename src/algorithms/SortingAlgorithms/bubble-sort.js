@@ -3,7 +3,7 @@ import { validationMessages } from '../../utils/strings';
 function bubbleSort(arr) {
   if (!arr) throw new Error(validationMessages.missingArguments);
   if (!Array.isArray(arr)) throw new Error(validationMessages.invalidArguments);
-  if (arr.length <= 2) return arr;
+  if (arr.length <= 1) return arr;
 
   let j = arr.length;
 
