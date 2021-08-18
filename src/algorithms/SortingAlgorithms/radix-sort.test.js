@@ -1,4 +1,13 @@
 import radixSort from './radix-sort';
+import { validationMessages } from '../../utils/strings';
+
+test('Radix Sort expects an array as its argument', () => {
+  expect(() => radixSort()).toThrow(validationMessages.missingArguments);
+});
+
+test('Radix Sort expects an array as its argument', () => {
+  expect(() => radixSort(123)).toThrow(validationMessages.invalidArguments);
+});
 
 test('Radix Sort', () => {
   expect(

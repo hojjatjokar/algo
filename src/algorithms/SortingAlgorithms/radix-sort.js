@@ -1,4 +1,8 @@
+import { validationMessages } from '../../utils/strings';
+
 function radixSort(arr) {
+  if (!arr) throw new Error(validationMessages.missingArguments);
+  if (!Array.isArray(arr)) throw new Error(validationMessages.invalidArguments);
   let i = 0;
   let maxLength = 1;
   let result = [...arr];
