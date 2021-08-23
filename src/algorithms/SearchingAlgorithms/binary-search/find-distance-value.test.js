@@ -10,5 +10,5 @@ test('Find Distance', () => {
 });
 
 test('Find Distance', () => {
-  expect(findDistane([2, 1, 100, 3], [-5, -2, 10, -3, 7], 6)).toBe(2);
+  expect(findDistane([2, 1, 100, 3], [-5, -2, 10, -3, 7], 6)).toBe(1);
 });
