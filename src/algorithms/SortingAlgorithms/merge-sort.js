@@ -1,16 +1,20 @@
-function sort(arr) {
-  if (arr.length < 2) return arr;
-  const [arr1, arr2] = divid(arr);
+import { validationMessages } from '../../utils/strings';
 
-  return merge(sort(arr1), sort(arr2));
+function mergeSort(arr) {
+  if (!arr) throw new Error(validationMessages.missingArguments);
+  if (!Array.isArray(arr)) throw new Error(validationMessages.invalidArguments);
+
+  if (arr.length < 2) return arr;
+
+  const [firstHalf, secondHalf] = divid(arr);
+  return merge(mergeSort(firstHalf), mergeSort(secondHalf));
 }
 
 function divid(arr) {
   const middle = Math.floor(arr.length / 2);
-  const arr1 = arr.slice(0, middle);
-  const arr2 = arr.slice(middle, arr.length);
-
-  return [arr1, arr2];
+  const firstHalf = arr.slice(0, middle);
+  const secondHalf = arr.slice(middle, arr.length);
+  return [firstHalf, secondHalf];
 }
 
 function merge(arr1, arr2) {
@@ -19,12 +23,14 @@ function merge(arr1, arr2) {
   let j = 0;
 
   while (i < arr1.length && j < arr2.length) {
-    if (arr1[i] < arr2[j]) {
-      result.push(arr1[i]);
-      i++;
-    } else {
-      result.push(arr2[j]);
-      j++;
+    while (j < arr2.length) {
+      if (arr1[i] < arr2[j]) {
+        result.push(arr1[i]);
+        i++;
+      } else {
+        result.push(arr2[j]);
+        j++;
+      }
     }
   }
 
@@ -32,12 +38,12 @@ function merge(arr1, arr2) {
     result.push(arr1[i]);
     i++;
   }
-  while (j < arr2.length) {
-    result.push(arr2[j]);
+
+  while (j < arr1.length) {
+    result.push(arr1[j]);
     j++;
   }
-
   return result;
 }
 
-export default sort;
+export default mergeSort;
