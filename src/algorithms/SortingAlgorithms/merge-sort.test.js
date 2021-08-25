@@ -12,3 +12,8 @@ test('merge sort accept one array', () => {
 test('merge sort throws error for invalid arguments', () => {
   expect(() => sort(123)).toThrow(validationMessages.invalidArguments);
 });
+
+test('merge sort should return sorted array', () => {
+  const arr = [1];
+  expect(sort(arr)).toEqual(arr);
+});
