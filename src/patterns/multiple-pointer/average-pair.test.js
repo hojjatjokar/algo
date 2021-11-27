@@ -1,5 +1,4 @@
 import averagePair from './average-pair';
-import { validationMessages } from '../../utils/strings';
 
 test('Could find average for float', () => {
   expect(averagePair([1, 2, 3], 2.5)).toBe(true);
@@ -19,14 +18,4 @@ test('Should support for empty array', () => {
 
 test('Should support for single element array', () => {
   expect(averagePair([1], 4)).toBe(false);
-});
-
-test('Should throw for missing arguments', () => {
-  expect(() => averagePair()).toThrow(validationMessages.missingArguments);
-});
-
-test('Should throw for missing arguments', () => {
-  expect(() => averagePair('hi', 'bye')).toThrow(
-    validationMessages.invalidArguments
-  );
 });
