@@ -1,8 +1,4 @@
-import { validationMessages } from '../../utils/strings';
-
-function countUniqueValues(arr) {
-  if (!arr) throw new Error(validationMessages.missingArguments);
-  if (!Array.isArray(arr)) throw new Error(validationMessages.invalidArguments);
+function countUniqueValues(arr: number[]): number {
   if (arr.length === 0) return 0;
   if (arr.length === 1) return 1;
 

@@ -1,4 +1,3 @@
-import { validationMessages } from '../../utils/strings';
 import countUniqueValues from './count-unique-values';
 
 test('Simple', () => {
@@ -19,16 +18,4 @@ test('Empty argument', () => {
 
 test('Single argument content', () => {
   expect(countUniqueValues([1])).toBe(1);
-});
-
-test('Missing argument', () => {
-  expect(() => countUniqueValues()).toThrow(
-    validationMessages.missingArguments
-  );
-});
-
-test('Invalid argument', () => {
-  expect(() => countUniqueValues('1,2,3')).toThrow(
-    validationMessages.invalidArguments
-  );
 });
