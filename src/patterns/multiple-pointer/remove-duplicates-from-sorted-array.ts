@@ -1,6 +1,7 @@
-function removeDuplicates(arr) {
+function removeDuplicates(arr: number[]): number[] {
   let i = 0;
   let j = 1;
+
   while (j < arr.length) {
     if (arr[i] === arr[j]) {
       arr.splice(j, 1);
