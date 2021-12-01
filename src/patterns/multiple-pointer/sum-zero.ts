@@ -1,9 +1,4 @@
-import { validationMessages } from '../../utils/strings';
-
-function sumZero(arr) {
-  if (!arr) throw new Error(validationMessages.missingArguments);
-  if (!Array.isArray(arr)) throw new Error(validationMessages.invalidArguments);
-
+function sumZero(arr: number[]) {
   let left = 0;
   let right = arr.length - 1;
 
