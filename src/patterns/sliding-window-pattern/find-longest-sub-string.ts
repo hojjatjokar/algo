@@ -1,4 +1,4 @@
-function findLongestSubstring(str) {
+function findLongestSubstring(str: string): number {
   let start = 0;
   let end = 0;
   let chars = new Map();
