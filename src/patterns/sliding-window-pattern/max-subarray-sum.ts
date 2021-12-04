@@ -1,6 +1,4 @@
-import { validationMessages } from '../../utils/strings';
-
-function maxSubarraySum(arr, num) {
+function maxSubarraySum(arr: number[], num: number): number {
   let left = 0;
   let right = num > 1 ? num - 1 : 0;
   let max = 0;
