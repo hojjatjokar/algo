@@ -1,4 +1,4 @@
-function minSubArrayLen(arr, num) {
+function minSubArrayLen(arr: number[], num: number): number {
   let i = 0;
   let j = 0;
   let result = 0;
