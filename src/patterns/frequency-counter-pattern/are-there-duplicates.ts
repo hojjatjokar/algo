@@ -1,4 +1,4 @@
-function areThereDuplicates(arr) {
+function areThereDuplicates(arr: number[]): boolean {
   const map = new Map();
   for (const item of arr) {
     if (map.has(item)) return true;
