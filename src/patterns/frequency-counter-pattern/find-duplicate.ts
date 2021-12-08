@@ -1,4 +1,4 @@
-function findDuplicate(arr) {
+function findDuplicate(arr: number[]): boolean {
   const map = new Map();
 
   for (const item of arr) {

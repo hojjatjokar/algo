@@ -1,4 +1,4 @@
-function numberOfGoodPairs(arr) {
+function numberOfGoodPairs(arr: number[]): number {
   if (arr.length < 2) return 0;
   let result = 0;
   const map = new Map();
