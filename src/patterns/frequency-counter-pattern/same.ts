@@ -1,15 +1,4 @@
-import { validationMessages } from '../../utils/strings';
-
-/**
- *
- * @param {number[]} arr1
- * @param {number[]} arr2
- * @returns {boolean}
- */
-function same(arr1, arr2) {
-  if (!arr1 || !arr2) throw new Error(validationMessages.missingArguments);
-  if (!Array.isArray(arr1) || !Array.isArray(arr2))
-    throw new Error(validationMessages.invalidArguments);
+function same(arr1: number[], arr2: number[]): boolean {
   if (arr1.length !== arr2.length) return false;
 
   const squaredCounter = new Map();
