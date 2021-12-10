@@ -1,6 +1,7 @@
-function twoSum(arr, target) {
+function twoSum(arr: number[], target: number): number[] | null {
   const map = new Map();
-  const arrr = arr.entries();
+  type Pair = [number, number];
+  const arrr: IterableIterator<Pair> = arr.entries();
 
   for (const [key, item] of arrr) {
     const result = target - item;
