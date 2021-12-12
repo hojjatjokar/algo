@@ -1,6 +1,11 @@
-function search(arr, target, left = 0, right = arr.length - 1) {
+function search(
+  arr: number[],
+  target: number,
+  left = 0,
+  right = arr.length - 1
+): number {
   const pivot = Math.floor((right + left) / 2);
-  console.log('arr', arr, left, right, pivot);
+
   if (right < left) return -1;
   if (arr[pivot] === target) return pivot;
 
