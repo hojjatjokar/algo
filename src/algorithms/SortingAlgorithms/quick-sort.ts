@@ -1,8 +1,6 @@
 import { validationMessages } from '../../utils/strings';
 
-function quickSort(arr) {
-  if (!arr) throw new Error(validationMessages.missingArguments);
-  if (!Array.isArray(arr)) throw new Error(validationMessages.invalidArguments);
+function quickSort(arr: number[]): number[] {
   if (arr.length < 2) return arr;
 
   const pivot = 0;
