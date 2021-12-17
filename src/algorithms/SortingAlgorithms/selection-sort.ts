@@ -1,8 +1,4 @@
-import { validationMessages } from '../../utils/strings';
-
-function selectionSort(arr) {
-  if (!arr) throw new Error(validationMessages.missingArguments);
-  if (!Array.isArray(arr)) throw new Error(validationMessages.invalidArguments);
+function selectionSort(arr: number[]): number[] {
   if (arr.length <= 1) return arr;
 
   for (let i = 0; i < arr.length - 1; i++) {
