@@ -1,4 +1,4 @@
-function addToNumbers(arr1, arr2, carry = 0) {
+function addToNumbers(arr1: number[], arr2: number[], carry = 0): number[] {
   if (!arr1.length && !arr2.length) {
     return carry ? [carry] : [];
   }
@@ -12,7 +12,7 @@ function addToNumbers(arr1, arr2, carry = 0) {
   return [+added, ...addToNumbers(arr1, arr2, +c)];
 }
 
-function add(num1 = 0, num2 = 0, carry = 0) {
+function add(num1 = 0, num2 = 0, carry = 0): string[] {
   const result = num1 + num2 + carry;
   return result.toString().split('');
 }
