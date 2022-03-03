@@ -1,8 +1,4 @@
-import { validationMessages } from '../../utils/strings';
-
-function bubbleSort(arr) {
-  if (!arr) throw new Error(validationMessages.missingArguments);
-  if (!Array.isArray(arr)) throw new Error(validationMessages.invalidArguments);
+function bubbleSort(arr: number[]): number[] {
   if (arr.length <= 1) return arr;
 
   let j = arr.length;
