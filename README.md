@@ -1,17 +1,20 @@
-# JavaScript Algorithms
-
-![CircleCI](https://img.shields.io/circleci/build/github/hojjatjokar/algo?label=ci)
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/hojjatjokar/algo/main.svg?style=flat-square)](https://codecov.io/gh/hojjatjokar/algo/)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Prerequisite](https://img.shields.io/badge/node-%3E%3D12.13.0-blue.svg)
-[![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+# Algorithms
 
 ## Patterns
 
-### Frequency Counter
+### Frequency Counter Pattern
 
-- [Same](https://github.com/hojjatjokar/algo/blob/main/src/FrequencyCounterPattern/same.js)
+#### Goal
+
+This can often avoid the need for nested loops or O(n^2) operations with arrays/strings.
+
+#### How
+
+This pattern collects frequencies of values. (using objects, sets, maps). Accessing the value in this way is linear and costs O(1). Then using this dictionary to check against each item of the array improve the code significantly.
+
+#### Use cases
+
+- [Same](/src/patters/frequency-counter-pattern/same)
 
 - [Anagram](https://github.com/hojjatjokar/algo/blob/main/src/FrequencyCounterPattern/anagram.js)
 - [TwoSum](https://github.com/hojjatjokar/algo/blob/main/src/FrequencyCounterPattern/twoSum.js)
