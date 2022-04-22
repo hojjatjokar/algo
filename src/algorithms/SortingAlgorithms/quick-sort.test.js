@@ -12,11 +12,3 @@ test('Quick sort: array with length of one is sorted', () => {
 test('Quick sort', () => {
   expect(quicksort([5, 2, 1, 8, 4, 7, 6, 3])).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
 });
-
-test('Quick sort: an array as a argument is required', () => {
-  expect(() => quicksort()).toThrow(validationMessages.missingArguments);
-});
-
-test('Quick sort: an array as a argument is required', () => {
-  expect(() => quicksort(123)).toThrow(validationMessages.invalidArguments);
-});

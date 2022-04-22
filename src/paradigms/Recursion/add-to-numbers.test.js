@@ -1,4 +1,4 @@
-import addToNumbers from './add-to-numbers.js';
+import addToNumbers from './add-to-numbers.ts';
 
 test('Add to numbers', () => {
   expect(addToNumbers([2, 4, 3], [5, 6, 4])).toEqual([7, 0, 8]);
