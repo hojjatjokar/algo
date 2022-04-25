@@ -1,4 +1,4 @@
-import twoSum from './two-sum';
+import twoSum from './twoSum';
 
 test('find two sum', () => {
   expect(twoSum([1, 8, 4, 6, 3], 3)).toBeNull;
