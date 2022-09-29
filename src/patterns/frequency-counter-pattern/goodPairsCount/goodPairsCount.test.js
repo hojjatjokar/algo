@@ -1,4 +1,4 @@
-import goodPairsCount from './goodPairsCount';
+import goodPairsCount from '.';
 
 describe('goodPairsCount', () => {
   it('should return 0 when array is empty', () => {
