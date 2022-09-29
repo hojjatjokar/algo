@@ -16,9 +16,9 @@ This pattern collects frequencies of values. (using objects, sets, maps). Access
 
 - [Same](/src/patterns/frequency-counter-pattern/same)
 - [TwoSum](/src/patterns/frequency-counter-pattern/twoSum)
-- [Anagram](https://github.com/hojjatjokar/algo/blob/main/src/FrequencyCounterPattern/anagram.js)
-
-- [Check Duplicates](https://github.com/hojjatjokar/algo/blob/main/src/FrequencyCounterPattern/areThereDuplicates.js)
+- [Anagram](/src/patterns/frequency-counter-pattern/anagram)
+- [hasDuplicate](/src/patterns/frequency-counter-pattern/hasDuplicate)
+- [GoodPairsCount](/src/patterns/frequency-counter-pattern/goodPairsCount)
 
 ### Multiple Pointer
 
