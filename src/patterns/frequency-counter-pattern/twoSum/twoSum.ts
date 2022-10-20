@@ -1,16 +1,15 @@
-function twoSum(arr: number[], target: number): number[] | null {
+const twoSum = (array: number[], target: number): number[] | null => {
   const map = new Map();
-  type Pair = [number, number];
-  const arrr: IterableIterator<Pair> = arr.entries();
 
-  for (const [key, item] of arrr) {
-    const result = target - item;
+  for (let i = 0; i < array.length; i++) {
+    const lookup = Math.abs(target - array[i]);
 
-    if (map.has(result)) return [map.get(result), key];
-    map.set(item, key);
+    if (map.has(lookup)) return [map.get(lookup), i];
+
+    map.set(array[i], i);
   }
 
   return null;
-}
+};
 
 export default twoSum;
