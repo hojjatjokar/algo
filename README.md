@@ -14,10 +14,10 @@ This pattern collects frequencies of values. (using objects, sets, maps). Access
 
 #### Use cases
 
-- [Same](/src/patters/frequency-counter-pattern/same)
-
+- [Same](/src/patterns/frequency-counter-pattern/same)
+- [TwoSum](/src/patterns/frequency-counter-pattern/twoSum)
 - [Anagram](https://github.com/hojjatjokar/algo/blob/main/src/FrequencyCounterPattern/anagram.js)
-- [TwoSum](https://github.com/hojjatjokar/algo/blob/main/src/FrequencyCounterPattern/twoSum.js)
+
 - [Check Duplicates](https://github.com/hojjatjokar/algo/blob/main/src/FrequencyCounterPattern/areThereDuplicates.js)
 
 ### Multiple Pointer
