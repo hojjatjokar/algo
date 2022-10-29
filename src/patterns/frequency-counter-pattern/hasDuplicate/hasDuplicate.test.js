@@ -1,4 +1,4 @@
-import hasDuplicate from './hasDuplicate';
+import hasDuplicate from '.';
 
 describe('hasDuplicate', () => {
   it('should return false when does not find any duplication', () => {});
