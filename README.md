@@ -19,15 +19,17 @@ This pattern collects frequencies of values. (using objects, sets, maps). Access
 - [Anagram](/src/patterns/frequency-counter-pattern/anagram)
 - [hasDuplicate](/src/patterns/frequency-counter-pattern/hasDuplicate)
 - [GoodPairsCount](/src/patterns/frequency-counter-pattern/goodPairsCount)
+- [wordFrequencyCounter](/src/patterns/frequency-counter-pattern/wordFrequencyCounter/)
 
 ### Multiple Pointer
+
+- [validPalindrome](/src/patterns/multiple-pointer/validPalindrome/)
 
 - [Count Unique Values](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/countUniqueValues.js)
 - [Remove Duplicates](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/removeDuplicatesfromSortedArray.js)
 - [Sum Zero](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/sumZero.js)
 - [Average Pair](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/averagePair.js)
 - [Is Subsequence](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/isSubsequence.js)
-- [Valid Palindrome](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/validPalindrome.js)
 
 ### Sliding Window
 
