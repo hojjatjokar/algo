@@ -8,19 +8,19 @@ A string with no special characters or punctuations.
 
 ## Output
 
-Output should be in the format: Word Count
+Output should be in the format: `Word Count`
 
-where Word is a string in the passage, and count is an integer representing number of times the Word has appeared in the passage. Word and the count must be separated by a space.
+where Word is a `string` in the passage, and count is an `integer` representing number of times the Word has appeared in the passage. Word and the count must be separated by a space.
 
-Words and their count must be listed out in same order as given in the passage.
+Words and their count must be listed out in the same order as given in the passage.
 
 Passage will be given as a single string, and not in paragraphs.
 
 ## Constrains
 
-`0 <= W <= 1000`
+- `0 <= W <= 1000`
 
-where W is the number of words in the passage.
+- where `W` is the number of words in the passage.
 
 ## Note
 
@@ -33,14 +33,16 @@ Sample input:
 
 Sample output:
 
-```
-MY 1
-NAME 1
-IS 3
-XYZ 1
-HE 2
-ABC 1
-ALLRIGHT 1
+```js
+{
+  MY: 1,
+  NAME: 1,
+  IS: 3,
+  XYZ: 1,
+  HE: 2,
+  ABC: 1,
+  ALLRIGHT: 1,
+}
 ```
 
 ## Explanation
@@ -59,14 +61,16 @@ Similarly the counting process is done for all other words in the passage.
 
 So the output is:
 
-```
-MY 1
-NAME 1
-IS 3
-XYZ 1
-HE 2
-ABC 1
-ALLRIGHT 1
+```js
+{
+  MY: 1,
+  NAME: 1,
+  IS: 3,
+  XYZ: 1,
+  HE: 2,
+  ABC: 1,
+  ALLRIGHT: 1,
+}
 ```
 
 Source:
