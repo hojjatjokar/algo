@@ -6,6 +6,7 @@ import hasDuplicate from './patterns/frequency-counter-pattern/hasDuplicate';
 import wordFrequencyCounter from './patterns/frequency-counter-pattern/wordFrequencyCounter';
 
 import validPalindrome from './patterns/multiple-pointer/validPalindrome';
+import averagePair from './patterns/multiple-pointer/averagePair';
 
 export {
   anagram,
@@ -15,4 +16,5 @@ export {
   hasDuplicate,
   wordFrequencyCounter,
   validPalindrome,
+  averagePair,
 };
