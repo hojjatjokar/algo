@@ -24,11 +24,12 @@ This pattern collects frequencies of values. (using objects, sets, maps). Access
 ### Multiple Pointer
 
 - [validPalindrome](/src/patterns/multiple-pointer/validPalindrome/)
-
+- [averagePair](/src/patterns/multiple-pointer/averagePair.js)
+-
 - [Count Unique Values](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/countUniqueValues.js)
 - [Remove Duplicates](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/removeDuplicatesfromSortedArray.js)
 - [Sum Zero](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/sumZero.js)
-- [Average Pair](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/averagePair.js)
+
 - [Is Subsequence](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/isSubsequence.js)
 
 ### Sliding Window
