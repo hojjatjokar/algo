@@ -25,7 +25,6 @@ This pattern collects frequencies of values. (using objects, sets, maps). Access
 
 - [validPalindrome](/src/patterns/multiple-pointer/validPalindrome/)
 - [averagePair](/src/patterns/multiple-pointer/averagePair.js)
--
 - [Count Unique Values](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/countUniqueValues.js)
 - [Remove Duplicates](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/removeDuplicatesfromSortedArray.js)
 - [Sum Zero](https://github.com/hojjatjokar/algo/blob/main/src/MultiplePointerPattern/sumZero.js)

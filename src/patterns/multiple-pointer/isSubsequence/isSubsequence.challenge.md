@@ -12,16 +12,14 @@ without their order changing.
   - str2
 - output: boolean
 
-## Examples
-
-### Example 1:
+## Case 1
 
 - inputs
-  - str1: 'hello'
-  - str2: 'hello world'
+  - str1: `'hello'`
+  - str2: `'hello world'`
 - output: true
 
-### Example 2:
+## Case 2
 
 - inputs
   - str1: 'sing'
