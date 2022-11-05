@@ -9,6 +9,7 @@ import validPalindrome from './patterns/multiple-pointer/validPalindrome';
 import averagePair from './patterns/multiple-pointer/averagePair';
 import countUniqueValues from './patterns/multiple-pointer/countUniqueValues';
 import isSubsequence from './patterns/multiple-pointer/isSubsequence';
+import sumZero from './patterns/multiple-pointer/sumZero';
 
 export {
   anagram,
@@ -21,4 +22,5 @@ export {
   averagePair,
   countUniqueValues,
   isSubsequence,
+  sumZero,
 };
