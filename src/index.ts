@@ -7,6 +7,8 @@ import wordFrequencyCounter from './patterns/frequency-counter-pattern/wordFrequ
 
 import validPalindrome from './patterns/multiple-pointer/validPalindrome';
 import averagePair from './patterns/multiple-pointer/averagePair';
+import countUniqueValues from './patterns/multiple-pointer/countUniqueValues';
+import isSubsequence from './patterns/multiple-pointer/isSubsequence';
 
 export {
   anagram,
@@ -17,4 +19,6 @@ export {
   wordFrequencyCounter,
   validPalindrome,
   averagePair,
+  countUniqueValues,
+  isSubsequence,
 };
