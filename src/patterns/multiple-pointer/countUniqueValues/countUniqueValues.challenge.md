@@ -4,27 +4,30 @@ Implement a function called **countUniqueValues**, which accepts a sorted array,
 
 ## Important pieces
 
-- input: a sorted array
+- inputs
+  - a sorted array
 - output: unique values in the array
 
-## Examples
+## Case 1
 
-### Example 1:
+- inputs
+  - `[1, 1, 1, 1, 1, 2]`
+- output: `2`
 
-- input: [1,1,1,1,1,2]
-- output: 2
+## Case 2
 
-### Example 2:
+- inputs
+  - `[1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13]`
+- output `7`
 
-- input: [1,2,3,4,4,4,7,7,12,12,13]
-- output: 7
+## Case 3
 
-### Example 3:
-
-- input: []
+- inputs
+  - `[]`
 - output: 0
 
-### Example 4:
+## Case 4
 
-- input: [-2,-1,-1,0,1]
+- inputs
+  - `[-2, -1, -1, 0, 1]`
 - output: 4
